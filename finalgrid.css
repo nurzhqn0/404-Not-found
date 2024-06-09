@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-header {
+  font-family: "Inconsolata", monospace;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 25px;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.img-not-found {
+  margin-right: 160px;
+  width: 539px;
+  height: 447px;
+}
+
+.content-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-info {
+  font-family: "Space Mono", monospace;
+}
+.content-info h1 {
+  font-weight: 700;
+  font-size: 64px;
+  color: #333333;
+}
+.content-info p {
+  font-weight: 400;
+  font-size: 24px;
+  color: #4f4f4f;
+  margin-top: 40px;
+}
+.content-info button {
+  all: unset;
+  font-family: "Space Mono", monospace;
+  font-weight: 700px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #333333;
+  margin-top: 30px;
+  text-transform: uppercase;
+  padding: 23px 43px;
+  cursor: pointer;
+  margin-top: 80px;
+}
+.content-info button:hover {
+  color: #333;
+  background-color: #ffffff;
+}
+
+.footer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #bdbdbd;
+  margin-top: 120px;
+  padding: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .content-container {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .img-not-found {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    width: 286px;
+    height: 238px;
+    justify-content: center;
+  }
+
+  .content-info h1 {
+    font-size: 48px;
+    margin-top: 80px;
+  }
+  .content-info p {
+    font-size: 18px;
+  }
+}
